@@ -14,7 +14,7 @@ document.getElementById('btn-submit').addEventListener('click' , function(){
 
 
     if( emailF === "adoy@gmail.com" && passwordF === "Adoy2050"){
-        console.log('Valid User');
+        location.href = '/home.html';
     }
     else{
         console.log('Invalid User');
