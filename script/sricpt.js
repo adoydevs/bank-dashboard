@@ -17,6 +17,6 @@ document.getElementById('btn-submit').addEventListener('click' , function(){
         location.href = '/home.html';
     }
     else{
-        console.log('Invalid User');
+        alert("Your are using wrong Password");
     }
 })
