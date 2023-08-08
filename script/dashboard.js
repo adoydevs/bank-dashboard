@@ -1,6 +1,6 @@
 document.getElementById('btn-withdraw').addEventListener('click', function(){
-    const withdrawField = document.getElementById('textField');
-    const depositSting = withdrawField.value;
+    const depositField = document.getElementById('textField');
+    const depositSting = depositField.value;
     const deposit = parseFloat(depositSting);
     
 
@@ -22,10 +22,33 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
     totalBal.innerText = currentBalance;
     
 
-    withdrawField.value = " ";
+    depositField.value = " ";
 
 })
 
 document.getElementById('withdrawID').addEventListener('click', function(){
-    
+    const withdrawNew = document.getElementById('withdrawField');
+    const withdrawstring = withdrawNew.value;
+    const withdraw = parseFloat(withdrawstring);
+
+
+    const withdrawBal = document.getElementById('total-withdraw');
+    const totalWithString = withdrawBal.innerText;
+    const newWithBalance = parseFloat(totalWithString);
+
+    const currentWith = newWithBalance + withdraw; 
+    withdrawBal.innerText = currentWith;
+
+
+
+
+    const finalBal = document.getElementById('balanceID');
+    const finalBalString = finalBal.innerText;
+    const finalBalance = parseFloat(finalBalString);
+
+    const presentBalance = finalBalance - withdraw;
+    finalBal.innerText = presentBalance;
+
+
+    withdrawNew.value = " ";
 })
