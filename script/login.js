@@ -8,7 +8,7 @@ document.getElementById('btn').addEventListener('click' , function(){
     const password = passwordFiled.value;
 
     if(email === "adoy@gmail.com" && password === "Adoy2050"){
-        location.href = '/Dashboard.html';
+        location.href = '/dashboard.html';
     }
     else{
         alert('Please submit corect information');
