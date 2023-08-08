@@ -7,5 +7,10 @@ document.getElementById('btn').addEventListener('click' , function(){
     const passwordFiled = document.getElementById('pass');
     const password = passwordFiled.value;
 
-    console.log(email , password);
+    if(email === "adoy@gmail.com" && password === "Adoy2050"){
+        location.href = '/Dashboard.html';
+    }
+    else{
+        alert('Please submit corect information');
+    }
 })
