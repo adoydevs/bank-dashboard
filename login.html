@@ -7,27 +7,23 @@
 </head>
 <body>
     <div class="flex justify-center	items-center h-screen bg-violet-500">
-        <div class="bg-pink-500 p-4 rounded-md">
+        
+        <div class="w-96 p-6 bg-white drop-shadow-lg rounded-md">
             <h3 class="text-2xl font-bold mb-2.5">
                 SIGN IN
               </h3>
-            <form>
-                <h4>Email</h4>
-                <input class="border-2" type="email" name="Email" id="" placeholder="Your Email">
-                <h4 class="mt-2.5">Password</h4>
-                <input class="border-2" type="password" name="Password" id="">
-            </form>
-            <button class="font-medium text-white bg-pink-500 px-4 mt-2.5">SIGN IN</button>
-          </div>
+            <div>
+                <label class="block " for="email">Email</label>
+                <input class="w-full border-2 rounded-md" type="email" name="Email" id="">
+                <label class="block" for="password">Password</label>
+                <input class="w-full border-2 rounded-md" type="password" name="Password" id="">
+            </div>
+            <button class="w-full text-white bg-pink-500 px-4 py-2 mt-2.5 rounded-md drop-shadow-lg">SIGN IN</button>
+            
+        </div>
         
 
     </div>
-
-
-
-   
-  
-
 
 
   <script src="/script/login.js"></script>
